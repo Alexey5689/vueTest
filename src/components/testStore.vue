@@ -1,10 +1,10 @@
 <template>
     <div>
-       
-
+        
     </div>
+    
     <div>
-        <MyButton>++</MyButton>
+        <MyButton @click="">++</MyButton>
     </div>
     <div>
         
@@ -15,13 +15,16 @@
 
 <script>
     
+    
     export default{
         data(){
             return{
-                
+                 
             }
         },
         methods:{
+          
+          
            
             
            

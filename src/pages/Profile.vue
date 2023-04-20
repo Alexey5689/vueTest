@@ -1,6 +1,11 @@
 <template>
     <div class="wrapper">
-            <ModelWindow v-model:show="$store.state.show">
+            <!-- <ModelWindow v-model:show="$store.state.show">
+                <createPost
+                    @create="createPost"
+                />
+            </ModelWindow> -->
+            <ModelWindow v-model:show="stateShow">
                 <createPost
                     @create="createPost"
                 />
@@ -27,7 +32,7 @@
  <!-- <MyButton @click="logOut()">Выход</MyButton> -->
 
 <script>
-    import { mapState} from 'vuex'
+    import { mapState, mapGetters} from 'vuex'
     export default{
    
     data() {
@@ -36,6 +41,9 @@
     computed:{
         ...mapState({
             posts: state => state.post.posts, 
+        }),
+        ...mapGetters({
+            stateShow:'stateShow'
         })
     },
     methods: {

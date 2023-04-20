@@ -59,22 +59,3 @@ export const PostModul = {
 
 
 
-export const TestModul = {
-    state: () => ({
-        numb:1,
-       
-
-    }),
-    getters:{
-       
-    },
-
-    mutations:{
-        getNumb(state, numb){
-            state.numb = numb;
-        },
-    },
-    actions:{
-    },
-    namespased: true,
-}

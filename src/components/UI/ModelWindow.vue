@@ -1,5 +1,5 @@
 <template>
-    <div class="modelWindow" v-if="show" @click.stop ="hideWindow">
+    <div class="modelWindow" v-if="stateShow" @click.stop ="hideWindow">
         <div @click.stop class="modelWindow__contant">
             <slot></slot>
         </div>
@@ -8,6 +8,7 @@
 
 
 <script>
+    import { mapActions, mapGetters } from 'vuex';
     export default{
         name: 'ModelWindow',
         props:{
@@ -17,10 +18,22 @@
             }
         },
         methods:{
+            ...mapActions({
+                toggleShowState:'toggleShowState'
+            }),
+            // hideWindow(){
+            //     this.$emit('update:show', false)
+            // }
             hideWindow(){
-                this.$emit('update:show', false)
+                this.toggleShowState();
             }
+        },
+        computed:{
+            ...mapGetters({
+                stateShow:'stateShow'
+            })
         }
+        
     }
 </script>
 

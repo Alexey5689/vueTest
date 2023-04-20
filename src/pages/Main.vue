@@ -6,6 +6,7 @@
         <div v-if="$store.state.auth">
             <router-link to="/profile/"><MyButton class="btnProfile">Profile</MyButton></router-link>
         </div>
+       
 </template>
 
 

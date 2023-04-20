@@ -37,9 +37,7 @@
                 this.post={
                     title: '',
                     body:''
-                }
-                
-                
+                } 
             }
         }
     }

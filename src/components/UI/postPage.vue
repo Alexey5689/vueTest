@@ -4,13 +4,13 @@
         <!-- <createPost
             @create="createPost"
         /> -->
-       <MyButton @click="$store.state.show = true">Создать пост</MyButton>
+       <!-- <MyButton @click="$store.state.show = true">Создать пост</MyButton> -->
+       <MyButton @click="create">Создать пост</MyButton>
        <div class="postList">
             <PostList
                 :posts="posts"
                 v-if="!isPostLoading"
-                @remove="removePost"
-                
+                @remove="removePost"  
             />
             <div v-else>Идет загрузка...</div>
             <div class="page_wrapper">
@@ -55,15 +55,12 @@
                 totalPages: state => state.post.totalPages,
                 isPostLoading: state => state.post.isPostLoading,
                 posts: state => state.post.posts,  
-            }),   
+            }), 
+             
         },
     methods: {
-        creat(){
-            $store.state.show = true;
-        },
-        createPost(post) {
-            this.posts.push(post);
-        },
+       
+       
         ...mapMutations({
             getPage: 'getPage',
             getPost: 'getPost',
@@ -71,6 +68,7 @@
 
         ...mapActions({
             fetchPost: 'fetchPost',
+            toggleShowState:'toggleShowState',
         }),
            
         changePage(pageNumber){ 
@@ -79,7 +77,10 @@
         },
         removePost(post){
             this.getPost(this.posts.filter(p =>p.id!== post.id));   
-        } 
+        },  
+        create(){
+           this.toggleShowState(); 
+        },
     },
     mounted(){
         this.fetchPost();
