@@ -1,0 +1,35 @@
+.reg_wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.colorH1{
+    color:red;    
+}
+.validate{
+    display:flex;
+    flex-direction: column;
+    width: 30%;
+}
+.reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+.ruls{
+    color:red;
+    font-family: sans-serif;
+}
+.reg_form_btn{
+    margin-top: 20px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+.reference{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: large;
+}

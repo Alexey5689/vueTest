@@ -1,0 +1,31 @@
+.container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.postList{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.btnGet{
+    align-self: flex-end;
+}
+.page_wrapper{
+    display: flex;
+    width: 40%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.page{
+    cursor: pointer;
+    padding: 10px 15px;
+    border: 2px solid red;
+}
+.current_page{
+    border-radius: 2px;
+    border: 2px solid black;
+}
