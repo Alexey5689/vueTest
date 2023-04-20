@@ -5,6 +5,8 @@
             @create="createPost"
         /> -->
        <!-- <MyButton @click="$store.state.show = true">Создать пост</MyButton> -->
+
+       
        <MyButton @click="create">Создать пост</MyButton>
        <div class="postList">
             <PostList

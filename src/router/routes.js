@@ -31,6 +31,7 @@ import TestStore from '../components/testStore.vue';
         children:[
             {
                 path: '',
+                name: 'AddImage',
                 // component:() => import('../components/UI/Images3.vue'),
                 component: AddImage,
                

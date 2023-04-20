@@ -42,13 +42,12 @@ export const PostModul = {
 
 
             }catch(e){
-
+                console.log(e);
             }finally{
                 commit('getLoader', false)
                 
             }
         },
-       
         changePosts({state, commit}){
             commit('setPosts', state.posts);
         }
