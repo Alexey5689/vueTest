@@ -11,12 +11,12 @@
     import { mapActions, mapGetters } from 'vuex';
     export default{
         name: 'ModelWindow',
-        props:{
-            show:{
-                type: Boolean,
-                default:false,
-            }
-        },
+        // props:{
+        //     show:{
+        //         type: Boolean,
+        //         default:false,
+        //     }
+        // },
         methods:{
             ...mapActions({
                 toggleShowState:'toggleShowState'

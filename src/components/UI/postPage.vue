@@ -6,7 +6,7 @@
         /> -->
        <!-- <MyButton @click="$store.state.show = true">Создать пост</MyButton> -->
 
-       
+
        <MyButton @click="create">Создать пост</MyButton>
        <div class="postList">
             <PostList
@@ -61,8 +61,6 @@
              
         },
     methods: {
-       
-       
         ...mapMutations({
             getPage: 'getPage',
             getPost: 'getPost',
