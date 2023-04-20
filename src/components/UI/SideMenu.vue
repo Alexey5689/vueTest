@@ -19,8 +19,9 @@
             <router-link :to="{name:'ToDo'}">ToDoLitst</router-link>
         </li>
         <li class="side_menu_block">
-            <router-link :to="{name:'TestStore'}">TestStore</router-link>
+            <router-link :to="{name:'TestStore'}">Info</router-link>
         </li>
+        
     </ul>
 </template>
 

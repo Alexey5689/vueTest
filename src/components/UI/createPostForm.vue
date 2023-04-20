@@ -9,19 +9,19 @@
         <MyInput
             v-model="post.body"
         />
-        <MyButton class="btnPost" type="submit">Post</MyButton>
-       
+        <MyButton  class="btnPost" type="submit">Post</MyButton>
     </form>
 
 </template>
 
 
 <script>
+   
     export default{
         name:'CreatePost',
         data(){
             return{
-                
+
                 post:{
                     id: 0,
                     title: '',
@@ -38,6 +38,8 @@
                     title: '',
                     body:''
                 }
+                
+                
             }
         }
     }
@@ -46,10 +48,9 @@
 
 <style scoped>
     .postForm{
-        width: 50%;
+        width: 100%;
         display: flex;
-        flex-direction: column;
-       
+        flex-direction: column; 
     }
     .btnPost{
         align-self: flex-end;

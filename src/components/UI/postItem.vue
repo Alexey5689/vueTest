@@ -16,11 +16,7 @@
             </div>
         </div>
 </template>
-
-
 <script>
-
-
     export default{
     name: "PostItem",
     props: {
@@ -28,8 +24,7 @@
             type: Object,
             required: true,
         }
-    },
-    
+    },   
 }
 
 </script>

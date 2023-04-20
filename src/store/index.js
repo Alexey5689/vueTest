@@ -10,7 +10,7 @@ export default createStore({
             auth: auth,
             // auth: localStorage.getItem('auth'),
             // isReg: false,
-           
+            show: false,
         }),
         getters:{
            

@@ -10,6 +10,7 @@ import AddImage from './AddImage.vue';
 import CreatePost from './createPostForm.vue';
 import PostItem from './postItem.vue';
 import ToDo from './ToDoList.vue';
+import ModelWindow from './ModelWindow.vue';
 export default[
     MyInput,
     MyButton,
@@ -23,6 +24,7 @@ export default[
     CreatePost,
     PostItem,
     ToDo,
+    ModelWindow, 
 ]
     
 

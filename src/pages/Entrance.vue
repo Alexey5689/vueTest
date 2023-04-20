@@ -57,8 +57,8 @@
                         email: this.state.email,
                         password: this.state.passw,
                     }
-                    this.state.email = '';
-                    this.state.passw = '';
+                    // this.state.email = '';
+                    // this.state.passw = '';
                     localStorage.setItem('auth', true);
                     window.location.href ='/profile';     
                 }    

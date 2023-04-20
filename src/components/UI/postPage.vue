@@ -1,8 +1,10 @@
 <template>
     <div class="container">
-        <createPost
+       
+        <!-- <createPost
             @create="createPost"
-        />
+        /> -->
+       <MyButton @click="$store.state.show = true">Создать пост</MyButton>
        <div class="postList">
             <PostList
                 :posts="posts"
@@ -56,6 +58,9 @@
             }),   
         },
     methods: {
+        creat(){
+            $store.state.show = true;
+        },
         createPost(post) {
             this.posts.push(post);
         },
