@@ -13,7 +13,7 @@
                     {title: 'January', data: 70, bgcolor:"#b32b2b", color:"#ffffff"},
                     {title: 'February', data: 30, bgcolor:"#050505", color:"#ffffff"},
                     {title: 'March', data: 22, bgcolor:"#cc2ade", color:"#ffffff"},
-                    {title: 'April', data: 71, bgcolor:"#482ade", color:"#ffffff"},
+                    {title: 'April', data: 2, bgcolor:"#482ade", color:"#ffffff"},
                     {title: 'May', data: 40, bgcolor:"#2adecc", color:"#ffffff"},
                     {title: 'Jun', data: 18, bgcolor:"#2ade39", color:"#ffffff"},
                 ],

@@ -10,7 +10,7 @@ export const PostModul = {
             ], 
     }),
     getters:{
-       
+       //базовоее состояние
     },
     mutations:{
        getPost(state, posts){
@@ -27,6 +27,7 @@ export const PostModul = {
        },
     },
     actions:{
+        //запрос постов
         async fetchPost({state, commit}){
             try{
                 commit('getLoader', true)
@@ -53,6 +54,7 @@ export const PostModul = {
         }
     },
     namespased: true,
+    //пространство имен
 }
 
 

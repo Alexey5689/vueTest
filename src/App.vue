@@ -1,6 +1,7 @@
 <template>
   <NavBar/>
   <div class="app">
+    <!-- роутинг -->
     <router-view></router-view>
   </div>
 </template>
@@ -20,17 +21,8 @@
 </script>
 
 
-<style scoped>
- *{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
- }
-  .app{
-    padding: 20px;
-    height: 100vh;
-    /* background: #d0d0d0; */
-  }
+<style src="./styleApp.css" scoped>
+
  
   
 

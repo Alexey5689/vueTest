@@ -1,0 +1,20 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    &::after{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    &::before{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+ }
+  .app{
+    padding: 20px;
+    height: 100vh;
+    /* background: #d0d0d0; */
+  }

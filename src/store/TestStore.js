@@ -19,4 +19,5 @@ export const TestModul = {
         }
     },
     namespased: true,
+    //пространство имен
 }

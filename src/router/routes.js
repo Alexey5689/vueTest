@@ -26,9 +26,9 @@ export const routes=[
     {
         name: 'profile',
         path: '/profile/',
-        // component: ()=> import ('../pages/Profile.vue'),
+        // component: ()=> import ('../pages/Profile.vue'), подключение компонентов
         component: Profile, 
-        meta: { auth: true},
+        meta: { auth: true},//защита роутинга
         children:[
             {
                 path: '',

@@ -1,6 +1,6 @@
 <template>
 
-   <div>{{ $store.state.auth }}</div>
+   <div>{{stateAuth}}</div>
     
     <div  class="entr_wrap" v-if="!$store.state.auth" >
         <h1 class="colorH1">Вход</h1>
@@ -33,8 +33,10 @@
 </template>
 
 <script>
+    import { mapGetters } from 'vuex';
     import { validate } from '../hooks/EntranceValid';
     export default{
+        //работа с composition api
         setup(props){
             const {state, v$} = validate();
             return{
@@ -48,7 +50,9 @@
             }
         },
         methods:{
+
             handlerSubmit(){
+                //проверка формы валидации
                 this.v$.$validate()
                 if(this.v$.$error){
                    return;
@@ -57,17 +61,24 @@
                         email: this.state.email,
                         password: this.state.passw,
                     }
+                    //при входе не очищать поля что бы не срабатывала валидация
                     // this.state.email = '';
                     // this.state.passw = '';
-                    localStorage.setItem('auth', true);
-                    window.location.href ='/profile';     
+                    localStorage.setItem('auth', true); //сохранени в lockalstorage
+                    window.location.href ='/profile';     //переход 
                 }    
             },
            
             logOut(){
-                localStorage.setItem('auth', false);    
+                //удаление при выходе
+                localStorage.setItem('auth', false); 
             },   
         },
+        computed:{
+            ...mapGetters({
+                stateAuth:' stateAuth'
+            })
+        }
        
       
     }
